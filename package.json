@@ -1,0 +1,26 @@
+{
+  "name": "nodeserver",
+  "version": "1.0.0",
+  "description": "API RESTful Node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "Gabriel Kirsten",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielkirsten/exemploNodeJS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gabrielkirsten/exemploNodeJS/issues"
+  },
+  "homepage": "https://github.com/gabrielkirsten/exemploNodeJS#readme"
+}
