@@ -1,7 +1,7 @@
 {
-  "name": "nodeserver",
+  "name": "arduinonodejs-api",
   "version": "1.0.0",
-  "description": "API RESTful Node",
+  "description": "NodeJS API for arduino connection",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,15 +12,18 @@
   "author": "Gabriel Kirsten",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.14.1"
+    "express": "^4.14.1",
+    "firebase": "^3.6.9",
+    "firebase-admin": "^4.1.1",
+    "body-parser": "~1.0.1"
   },
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gabrielkirsten/exemploNodeJS.git"
+    "url": "git+https://github.com/gabrielkirsten/arduinoNodeJS-API.git"
   },
   "bugs": {
-    "url": "https://github.com/gabrielkirsten/exemploNodeJS/issues"
+    "url": "https://github.com/gabrielkirsten/arduinoNodeJS/issues"
   },
-  "homepage": "https://github.com/gabrielkirsten/exemploNodeJS#readme"
+  "homepage": "https://github.com/gabrielkirsten/arduinoNodeJS#readme"
 }
