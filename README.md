@@ -21,7 +21,8 @@ API para
 - [ ] Conexão com banco de dados;
 - [ ] API Finalizadada;
 - [ ] Implementação código arduino;
+- [ ] Implementação de interface para terminal com NodeJS;
 - [ ] Documentação.
 
 -----------
-###__Modo de uso:___
+###__Modo de uso:__
