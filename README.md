@@ -26,7 +26,7 @@ API RESTfull em nodeJS para conexão com um arduino conectado via serial (USB) u
 
 -----------
 ###__Instalação:__
-1. Instalar [Node.js](https://nodejs.org/en/).
+1. Instalar o [Node.js](https://nodejs.org/en/).
 
 2. Clone/download no projeto.
 
