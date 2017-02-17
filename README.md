@@ -1,6 +1,17 @@
-# exemploNodeJS
-Exemplo de uma aplicação RESTfull em NodeJS
+# :computer: arduinoNodeJS-API 
+## _A NodeJS API for arduino connection_
 
-![node js_logo svg](https://cloud.githubusercontent.com/assets/15522193/23031075/dd58fe1a-f456-11e6-9510-52f1b80e7fdf.png)
+```c++
+=========================================================================================
+                 _          _ ____                _       _               _    ____ ___ 
+ _ __   ___   __| | ___    | / ___|  __ _ _ __ __| |_   _(_)_ __   ___   / \  |  _ \_ _|
+| '_ \ / _ \ / _` |/ _ \_  | \___ \ / _` | '__/ _` | | | | | '_ \ / _ \ / _ \ | |_) | | 
+| | | | (_) | (_| |  __/ |_| |___) | (_| | | | (_| | |_| | | | | | (_) / ___ \|  __/| | 
+|_| |_|\___/ \__,_|\___|\___/|____/ \__,_|_|  \__,_|\__,_|_|_| |_|\___/_/   \_\_|  |___|
+=========================================================================================
 
-http://blog.ricardopereira.eu/2014/09/15/PT-restful-api-nodejs/
+```
+    PS. Description in PT-BR
+
+Progress:
+- [ ] Implementação Inicial 
