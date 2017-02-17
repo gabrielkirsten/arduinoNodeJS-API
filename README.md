@@ -13,7 +13,7 @@
 ```
     PS. Description in PT-BR
     
-API para
+API RESTfull em nodeJS para conexão com um arduino conectado via serial (USB) utilizando o banco de dados MongoDB.
 
 ###__Progress:__
 - [x] Implementação Inicial;
