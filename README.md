@@ -21,8 +21,15 @@ API RESTfull em nodeJS para conexão com um arduino conectado via serial (USB) u
 - [ ] Conexão com banco de dados;
 - [ ] API Finalizadada;
 - [ ] Implementação código arduino;
-- [ ] Implementação de interface para terminal com NodeJS;
+- [ ] Implementação de interface para terminal com NodeJS (blessed);
 - [ ] Documentação.
 
 -----------
-###__Modo de uso:__
+###__Instalação:__
+1. Instalar [Node.js](https://nodejs.org/en/).
+
+2. Clone/download no projeto.
+
+3. Executar `npm install` na pasta do projeto.
+
+4. Execute o aplicativo `node app.js`.
