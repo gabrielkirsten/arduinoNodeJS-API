@@ -12,6 +12,16 @@
 
 ```
     PS. Description in PT-BR
+    
+API para
 
-Progress:
-- [ ] Implementação Inicial 
+###__Progress:__
+- [x] Implementação Inicial;
+- [ ] __Integração com leitura/escrita via serial em sistemas Windows;__
+- [ ] Conexão com banco de dados;
+- [ ] API Finalizadada;
+- [ ] Implementação código arduino;
+- [ ] Documentação.
+
+-----------
+###__Modo de uso:___
