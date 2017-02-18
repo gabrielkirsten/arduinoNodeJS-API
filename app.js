@@ -3,48 +3,56 @@
 // BASE SETUP
 // =============================================================================
 
-// Chamando os pacotes
+// Pacotes
 var express     = require('express');
 var app         = express();
 var bodyParser  = require('body-parser');
-var fs          = require('fs');
+var SerialPort  = require("serialport");
 
 // Confifuração bodyParser()
-// this will let us get the data from a POST
+// que irá ober os dados via POST
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 var port = process.env.PORT || 8080;        // Porta da aplicação
-var comPort = "COM1";
+var comPort = "COM3";                       // Porta de conexão com o arduino
 
 // ROUTES PARA API
 // =============================================================================
 var router = express.Router();     // get em uma instância do express Router
 
-// middleware to use for all requests
+// middleware usado para os requests
 router.use(function(req, res, next) {
-    // do logging
-    console.log('Something is happening.');
-    next(); // make sure we go to the next routes and don't stop here
+    console.log('Something is happening...');
+    next(); // Certificar de ir para as próximas rotas e não parar aqui
 });
 
-// TEST (accessed at GET http://localhost:8080/api)
+// TESTE (Acessado via GET http://localhost:8080/API)
 router.get('/', function(req, res) {
     res.json({ message: '.. WELCOME TO ARDUINO ONLINE API ..' });
 });
 
+// ROUTE pora comandos via arduino
 router.route('/arduino')
   .post(function(req, res) {
-    var portArduino = req.body.port;  // set the bears name (comes from the request)
-    fs.writeFile(comPort, portArduino, 'utf8', function (err,data) {
-      if (err) {
-        return console.log(err);
+    var portArduino = req.body.port; // ler a porta requisitada via JSON
+
+    // Abre a conexão com a port serial
+    var serialport = new SerialPort(comPort);
+    serialport.on('open', function(error) {
+      if (error) {
+         res.log('Error on write: ', error.message)
       }
-      console.log(data);
+      console.log('Serial Port Opend');
+      serialport.on('data', function(data){
+        console.log(data[0]);
+      });
+
+      res.json({ message: 'Success! Arduino Port: ' + portArduino});
     });
-    res.json({ message: 'Success! port: ' + portArduino});
   });
-// more routes for our API will happen here
+
+// Outras rotas para a API deverão ser escritas aqui
 
 // REGISTRAR ROTAS
 // Todas as rotas terão o prefixo /API
