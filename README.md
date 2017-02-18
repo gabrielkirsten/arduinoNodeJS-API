@@ -17,8 +17,8 @@ API RESTfull em nodeJS para conexão com um arduino conectado via serial (USB) u
 
 ###__Progress:__
 - [x] Implementação Inicial;
-- [ ] __Integração com leitura/escrita via serial em sistemas Windows;__
-- [ ] Conexão com banco de dados;
+- [x] Integração com leitura/escrita via serial em sistemas Windows;
+- [ ] __Conexão com banco de dados;__
 - [ ] API Finalizadada;
 - [ ] Implementação código arduino;
 - [ ] Implementação de interface para terminal com NodeJS (blessed);
